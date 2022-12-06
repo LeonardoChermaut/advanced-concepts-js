@@ -68,14 +68,14 @@ Animal.prototype.walks = () => {
 }
 
 try {
-    console.log('whats species?n',Bear.species)
-    console.log('console my proto\n',Bear.__proto__);
-    console.log('this is a proto? \n',Bear.__proto__ === Animal.prototype);
-    console.log('whats a proto?\n',Animal.prototype);
-    console.log('what is bear?\n',Bear);
+    console.log('whats species?\n', Bear.species)
+    console.log('console my proto\n', Bear.__proto__);
+    console.log('this is a proto? \n', Bear.__proto__ === Animal.prototype);
+    console.log('whats a proto?\n', Animal.prototype);
+    console.log('what is bear?\n', Bear);
     
 } catch (error) {
-    console.trace("Ocorreu este erro: ", error);
+    console.trace("this error\n", error);
 }
 
 class Vehicle {
@@ -87,7 +87,6 @@ class Vehicle {
         return "Ready to go";
     }
 }
-
 
 class Motorycle extends Vehicle {
     constructor(){

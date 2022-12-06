@@ -23,7 +23,7 @@
       console.log(myValue);
     
   } catch (error) {
-    console.trace('Ocorreu este erro: ', error);
+    console.trace('this error\n', error);
   }
 
 
