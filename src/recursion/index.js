@@ -46,6 +46,7 @@ console.log(fib(12));
 //------------------------------------------ Without recursion ------------------------------------------ \\
 
 console.log("without recursion");
+
 const fibonacciPos = (pos) => {
   if (pos <= 1) return pos;
   const seq = [0, 1];
@@ -74,7 +75,6 @@ const smallFibPos = (pos) =>
 console.log(smallFibPos(8));
 
 //------------------------------------------ Real Examples ------------------------------------------ \\
-
 const getAWSProductIdImages = async () => {
   //get data with await fetch request
 
@@ -105,7 +105,6 @@ const artistsByGenre = {
         classic: ["Seal", "Morcgeeba", "Chris Stapleton"]
     }
 }
-
 
 const getArtistName = (dataObj, arr = []) => {
     Object.keys(dataObj).forEach(key => {
