@@ -50,6 +50,7 @@ rectangleArea = countParams(rectangleArea);
 rectangleArea = requireIntegers(rectangleArea);
 console.log(rectangleArea(20, 30));
 
+//------------------------------------------ Decorator Await Async ------------------------------------------ \\
 console.log("Async Await Decoration");
 
 const API_EXAMPLES = `https://randomuser.me/api/?results=5`;
@@ -66,7 +67,7 @@ let requestData = async (api) => {
 
 const dataResponseTime = (fn) => {
   return async (url) => {
-    console.time('fn');
+    console.time('time request ');
     const data = await fn(url);
     console.timeEnd('fn');
     return data;
@@ -81,3 +82,4 @@ const myTestFunction = async () => {
 }
 
 myTestFunction();
+

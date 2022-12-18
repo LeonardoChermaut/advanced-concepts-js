@@ -3,7 +3,7 @@ const javascript = document.getElementById("javascript");
 window.onload = checkImport(javascript);
 
 async function checkImport (script)  {
-    const jsFormat = "index.js";
-      script.src.includes(jsFormat) ? alert("Hello, Master! :D") : alert("where is my import script?");
+    const jsFormat = ".js";
+      script.src.includes(jsFormat) ? alert('Hello, Master! :D') : alert('Import a script js to check the examples in "console.log"');
     }
 
